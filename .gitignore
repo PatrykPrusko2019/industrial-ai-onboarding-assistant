@@ -1,6 +1,4 @@
-# =====================
 # Python / Backend
-# =====================
 .venv/
 venv/
 env/
@@ -17,19 +15,17 @@ __pycache__/
 .coverage
 htmlcov/
 
-# =====================
+
 # Environment variables
-# =====================
 .env
 .env.*
 !.env.example
 
-# =====================
+
 # Node / Frontend
-# =====================
 node_modules/
 frontend/node_modules/
-
+frontend/.vite/
 dist/
 frontend/dist/
 
@@ -41,10 +37,16 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# =====================
 # IDE / System
-# =====================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
