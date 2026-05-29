@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: industrial_ai_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: industrial_ai_db
+      POSTGRES_USER: industrial_ai_user
+      POSTGRES_PASSWORD: industrial_ai_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
