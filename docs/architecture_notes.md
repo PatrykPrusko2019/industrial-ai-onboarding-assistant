@@ -9,5 +9,6 @@ The application consists of the following main components:
 - Document knowledge base
 - Authentication and role-based access control
 - Industrial safety analytics module
+- Optional .NET Audit & Compliance Service
 
 The system is designed as a cloud-ready application that can be deployed using containers.
