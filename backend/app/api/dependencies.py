@@ -10,7 +10,7 @@ from app.models.user import User, UserRole
 from app.services.security import decode_access_token
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/token")
 
 
 def get_db() -> Generator[Session, None, None]:

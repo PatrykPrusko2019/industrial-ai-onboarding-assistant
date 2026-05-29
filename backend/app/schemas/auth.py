@@ -6,7 +6,7 @@ from app.models.user import UserRole
 class UserRegisterRequest(BaseModel):
     email: EmailStr
     full_name: str = Field(min_length=2, max_length=255)
-    password: str = Field(min_length=8, max_length=128)
+    password: str = Field(min_length=8, max_length=72)
 
 
 class UserLoginRequest(BaseModel):
