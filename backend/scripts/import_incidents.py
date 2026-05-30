@@ -2,6 +2,11 @@ import csv
 import sys
 from pathlib import Path
 
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+
+if str(BACKEND_ROOT) not in sys.path:
+    sys.path.append(str(BACKEND_ROOT))
+
 from app.db.base import Base
 from app.db.session import SessionLocal, engine
 from app.models.incident_report import IncidentReport
