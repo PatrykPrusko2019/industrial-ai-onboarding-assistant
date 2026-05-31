@@ -50,3 +50,13 @@ Thumbs.db
 # Docker
 *.log
 
+
+# Data
+data/raw/
+*.csv
+!data/sample/*.csv
+
+# Credentials
+kaggle.json
+.kaggle/
+
