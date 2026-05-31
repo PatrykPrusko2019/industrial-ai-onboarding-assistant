@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.auth import router as auth_router
 from app.db.base import Base
 from app.db.session import engine
-from app.models import incident_report, user
+from app.models import company_document, document_chunk, incident_report, user  # noqa: F401
 
 
 Base.metadata.create_all(bind=engine)
